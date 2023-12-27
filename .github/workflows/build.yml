@@ -1,12 +1,19 @@
 # File: .github/workflows/workflow.yml
 
+
 name: Run Azure Login with OIDC
-on:
-  workflow_dispatch: 
 
 permissions:
       id-token: write
       contents: read
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+
 jobs: 
   build-and-deploy:
     runs-on: ubuntu-latest
