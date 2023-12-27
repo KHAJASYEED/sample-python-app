@@ -11,6 +11,7 @@ on:
   push:
     branches:
       - main
+      - Test-api-demo
   workflow_dispatch: 
 
 
